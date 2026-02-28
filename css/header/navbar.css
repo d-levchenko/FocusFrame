@@ -1,0 +1,136 @@
+.header-container {
+  padding: 20px;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 0 20px;
+}
+
+.logo,
+.mobile-icon {
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.logo-mobile-icon {
+  fill: rgba(190, 166, 158, 0.4);
+}
+
+.mobile-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--mobile-icon-background);
+}
+
+.mobile-burger-open {
+  fill: var(--white);
+}
+
+.sign-up {
+  display: none;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.56;
+  text-transform: uppercase;
+  color: var(--black);
+  border-radius: 12px;
+  width: 187px;
+  height: 60px;
+  background-color: var(--white);
+}
+
+.desktop-nav-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-icon {
+    display: none;
+  }
+
+  .header-container {
+    display: flex;
+    gap: 14px;
+    padding: 20px 32px 40px;
+  }
+
+  .nav-main {
+    flex-grow: 1;
+  }
+
+  .sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-container {
+    gap: 20px;
+    padding: 20px 100px 80px;
+  }
+
+  .nav-main {
+    padding: 0 50px;
+  }
+
+  .desktop-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .desktop-nav-list-item {
+    width: fit-content;
+  }
+
+  .logo,
+  .desktop-nav-link {
+    padding: 21px 0;
+  }
+
+  .desktop-nav-link {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+
+  .mobile-wrapper,
+  .burger-icon {
+    display: none;
+  }
+
+  .sign-up {
+    width: 239px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .desktop-nav-list {
+    gap: 40px;
+  }
+}

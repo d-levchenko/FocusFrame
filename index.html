@@ -14,7 +14,7 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Goodle Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,10 +30,10 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="main-nav">
-          <a class="logo-link" href="./index.html">
-            <svg class="logo-icon" width="127" height="20">
+      <div class="container header-container">
+        <nav class="nav-main">
+          <a href="./index.html" class="logo">
+            <svg class="logo-svg-icon" width="127" height="20">
               <use href="./images/icons/icons.svg#logo"></use>
             </svg>
           </a>
@@ -52,24 +52,25 @@
               <a href="#" class="desktop-nav-link">Reviews</a>
             </li>
             <li class="desktop-nav-list-item">
-              <a href="#" class="desktop-nav-link">Contacts</a>
+              <a href="#" class="desktop-nav-link">contacts</a>
             </li>
           </ul>
 
-          <div class="mobile-right-side">
-            <a class="mobile-link" href="#">
-              <svg class="mobile-camera-svg" width="16" height="16">
+          <div class="mobile-wrapper">
+            <a href="#" class="mobile-icon">
+              <svg class="logo-mobile-icon" width="16" height="16">
                 <use href="./images/icons/icons.svg#camera"></use>
               </svg>
             </a>
 
-            <div class="burger-container">
-              <div class="burger-line"></div>
-              <div class="burger-middle-line"></div>
-              <div class="burger-line"></div>
-            </div>
+            <a href="#" class="burger-icon">
+              <svg class="mobile-burger-open" width="32" height="22">
+                <use href="./images/icons/icons.svg#burger-icon"></use>
+              </svg>
+            </a>
           </div>
         </nav>
+
         <button class="sign-up" type="button">Sign up</button>
       </div>
     </header>
