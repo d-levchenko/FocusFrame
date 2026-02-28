@@ -30,6 +30,12 @@
 
 .logo-mobile-icon {
   fill: rgba(190, 166, 158, 0.4);
+  transition: fill 300ms linear;
+}
+
+.logo-mobile-icon:hover,
+.logo-mobile-icon:focus {
+  fill: var(--brown);
 }
 
 .mobile-icon {
@@ -83,6 +89,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition:
+      background-color 300ms linear,
+      color 300ms linear;
+  }
+
+  .sign-up:hover,
+  .sign-up:focus {
+    background-color: var(--mobile-icon-background);
+    color: var(--brown);
   }
 }
 
@@ -117,6 +132,12 @@
     font-size: 14px;
     text-transform: uppercase;
     color: var(--white);
+    transition: color 300ms linear;
+  }
+
+  .desktop-nav-link:hover,
+  .desktop-nav-link:focus {
+    color: var(--brown);
   }
 
   .mobile-wrapper,
