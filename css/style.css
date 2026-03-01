@@ -2,3 +2,9 @@
 @import './header/navbar.css';
 @import './main/hero.css';
 @import './main/animated.css';
+@import './main/about-us.css';
+
+/* temporary style */
+.hidden {
+  display: none;
+}
