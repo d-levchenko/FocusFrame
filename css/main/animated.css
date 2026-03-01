@@ -1,0 +1,70 @@
+.animated-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.animated-title {
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--brown);
+
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100vw);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animated-middle-title {
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .animated-title {
+    font-size: 40px;
+    animation-duration: 15s;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(100vw);
+    }
+
+    to {
+      transform: translateX(-80%);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .animated-title {
+    font-size: 60px;
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(100vw);
+    }
+
+    to {
+      transform: translateX(-65%);
+    }
+  }
+}
