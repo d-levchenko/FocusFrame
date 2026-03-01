@@ -53,6 +53,7 @@
 
 .svg-student-arrow {
   fill: #fff;
+  transition: fill 300ms linear;
 }
 
 .students-review-wrapper {
@@ -121,6 +122,16 @@
 
   .hero-img {
     width: 393px;
+  }
+
+  .students-link:hover,
+  .students-link:focus {
+    color: var(--brown);
+  }
+
+  .svg-student-arrow:hover,
+  .svg-student-arrow:focus {
+    fill: var(--brown);
   }
 }
 

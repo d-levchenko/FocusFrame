@@ -1,0 +1,135 @@
+.courses-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
+}
+
+.courses-title-text-color {
+  color: var(--brown);
+}
+
+.courses-description {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.courses-heading-wrapper {
+  margin-bottom: 40px;
+}
+
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.courses-list-item {
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+}
+
+.courses-list-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.14;
+}
+
+.courses-list-description {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.courses-list-item-number {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.top-courses-list-part {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.bottom-courses-list-part {
+  display: flex;
+  flex-direction: column;
+  gap: 164px;
+}
+
+.courses-link {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d1d1d;
+  border-radius: 50%;
+  transition: background-color 300ms linear;
+}
+
+.courses-arrow {
+  color: #777777;
+  transition: color 300ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .courses-title {
+    margin-bottom: 0;
+    font-size: 48px;
+  }
+
+  .courses-description {
+    font-size: 16px;
+    width: 100%;
+    max-width: 381px;
+  }
+
+  .courses-heading-wrapper {
+    display: flex;
+    gap: 58px;
+  }
+
+  .courses-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .courses-list-item {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+
+  .courses-link:hover,
+  .courses-link:focus {
+    background-color: var(--white);
+  }
+
+  .courses-arrow:hover,
+  .courses-arrow:focus {
+    color: var(--black);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .courses-heading-wrapper {
+    gap: 410px;
+    margin-bottom: 50px;
+  }
+
+  .courses-list {
+    flex-wrap: nowrap;
+  }
+
+  .courses-list-item {
+    flex-basis: calc((100% - 20px) / 3);
+  }
+}
