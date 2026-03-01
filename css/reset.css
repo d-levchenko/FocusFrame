@@ -3,7 +3,7 @@
   --black: #121212;
   --white: #fff;
   --brown: #bea69e;
-  --mobile-cion-background: #1d1d1d;
+  --black-second: #1d1d1d;
 }
 
 a {
@@ -13,6 +13,7 @@ a {
 
 body {
   font-family: var(--main-font);
+  color: var(--white);
   background-color: var(--black);
 }
 

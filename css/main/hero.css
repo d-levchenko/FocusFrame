@@ -1,0 +1,138 @@
+.hero-container {
+  padding: 40px 20px 0;
+  border-radius: 32px;
+  background-color: var(--black-second);
+  position: relative;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.hero-title-style {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--brown);
+}
+
+.hero-description {
+  margin-bottom: 88px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
+.students-img {
+  border-radius: 50%;
+}
+
+.students-list {
+  display: flex;
+}
+
+.svg-student-arrow {
+  fill: #fff;
+}
+
+.students-review-wrapper {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 31px;
+}
+
+.svg-review-icon {
+  fill: #bea69e;
+}
+
+.reviews {
+  display: flex;
+  gap: 12px;
+}
+
+.review-description {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.review-description-number {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.13;
+  letter-spacing: -0.04em;
+}
+
+.review-link {
+  background-color: var(--brown);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    padding: 64px 32px 0;
+  }
+
+  .hero-title {
+    font-size: 60px;
+    max-width: 517px;
+  }
+
+  .students {
+    display: flex;
+    gap: 12px;
+  }
+
+  .hero-description {
+    margin-bottom: 40px;
+    max-width: 418px;
+  }
+
+  .hero-img {
+    width: 393px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-container {
+    padding: 80px 50px 0;
+    display: flex;
+    gap: 20px;
+  }
+
+  .hero-title {
+    max-width: 563px;
+  }
+
+  .hero-description {
+    margin-bottom: 136px;
+  }
+
+  .students-review-wrapper {
+    margin: 0;
+  }
+
+  .desktop-items-aligner {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    padding: 80px 100px 0 50px;
+    gap: 130px;
+  }
+}

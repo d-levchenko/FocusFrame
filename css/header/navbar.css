@@ -45,16 +45,17 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: var(--mobile-icon-background);
+  background-color: var(--black-second);
 }
 
 .mobile-burger-open {
-  fill: var(--white);
+  fill: #fff;
 }
 
 .sign-up {
   display: none;
 
+  border: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.56;
@@ -96,8 +97,8 @@
 
   .sign-up:hover,
   .sign-up:focus {
-    background-color: var(--mobile-icon-background);
-    color: var(--brown);
+    background-color: var(--black-second);
+    color: #bea69e;
   }
 }
 
@@ -131,7 +132,6 @@
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
-    color: var(--white);
     transition: color 300ms linear;
   }
 
