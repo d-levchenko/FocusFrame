@@ -124,6 +124,11 @@
     width: 393px;
   }
 
+  .students-link {
+    color: var(--white);
+    transition: color 300ms linear;
+  }
+
   .students-link:hover,
   .students-link:focus {
     color: var(--brown);
