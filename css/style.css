@@ -4,6 +4,7 @@
 @import './main/animated.css';
 @import './main/about-us.css';
 @import './main/courses.css';
+@import './main/mentors.css';
 
 /* temporary style */
 .hidden {
