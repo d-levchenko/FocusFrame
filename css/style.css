@@ -6,6 +6,7 @@
 @import './main/courses.css';
 @import './main/mentors.css';
 @import './main/sign-up.css';
+@import './main/reviews.css';
 
 /* temporary style */
 .hidden {
