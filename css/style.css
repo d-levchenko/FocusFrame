@@ -7,6 +7,7 @@
 @import './main/mentors.css';
 @import './main/sign-up.css';
 @import './main/reviews.css';
+@import './footer/footer.css';
 
 /* temporary style */
 .hidden {
