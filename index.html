@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header hidden">
       <div class="container header-container">
         <nav class="nav-main">
           <a href="./index.html" class="logo">
@@ -71,12 +71,12 @@
           </div>
         </nav>
 
-        <button class="sign-up" type="button">Sign up</button>
+        <button class="sign-up-btn" type="button">Sign up</button>
       </div>
     </header>
 
     <main>
-      <section class="hero-section">
+      <section class="hero-section hidden">
         <div class="container">
           <div class="hero-container">
             <div class="desktop-items-aligner">
@@ -164,7 +164,7 @@
         </div>
       </section>
 
-      <section class="section animated-section">
+      <section class="section animated-section hidden">
         <div class="animated-container">
           <h2 class="animated-title">
             Master
@@ -174,7 +174,7 @@
         </div>
       </section>
 
-      <section class="section about-us" id="about-us">
+      <section class="section about-us hidden" id="about-us">
         <div class="container">
           <h2 class="about-us-title">
             About <span class="about-us-text">Us</span>
@@ -219,7 +219,7 @@
         </div>
       </section>
 
-      <section class="section our-courses" id="courses">
+      <section class="section our-courses hidden" id="courses">
         <div class="container">
           <div class="courses-heading-wrapper">
             <h2 class="courses-title">
@@ -295,7 +295,7 @@
         </div>
       </section>
 
-      <section class="section our-mentors" id="mentors">
+      <section class="section our-mentors hidden" id="mentors">
         <div class="container">
           <h2 class="mentors-title">
             Our <span class="mentors-title-text">Mentors</span>
@@ -362,6 +362,83 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section class="section sign-up">
+        <div class="container sign-up-container">
+          <div class="tablet-wrapper">
+            <h2 class="sign-up-title">
+              Sign <span class="sign-up-title-text">Up</span>
+            </h2>
+            <p class="sign-up-description">
+              Please use the form below to contact us. Enter your name, email,
+              and message and we'll get back to you shortly.
+            </p>
+
+            <form class="sign-up-form">
+              <label class="sign-up-label" for="name"> </label>
+              <input
+                class="sign-up-input"
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+              />
+
+              <label class="sign-up-label" for="email"> </label>
+              <input
+                class="sign-up-input"
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+              />
+
+              <label class="sign-up-label" for="comment"> </label>
+              <textarea
+                class="sign-up-comment"
+                name="comment"
+                id="comment"
+                placeholder="Message"
+              ></textarea>
+
+              <button class="sign-up-send-btn" type="button">Send</button>
+              <p class="form-send-description">
+                By clicking on “Send” button, you agree to our
+                <span class="send-privacy">Privacy Policy</span>, and allow
+                Promodo to use this information for marketing purposes.
+              </p>
+            </form>
+          </div>
+
+          <div class="desktop-sign-up-img">
+            <div class="desktop-img-smaller-bg">
+              <img
+                srcset="
+                  ./images/sign-up/smaller.png   1x,
+                  ./images/sign-up/smaller@2.png 2x
+                "
+                src="./images/sign-up/smaller.png"
+                alt="Our photo tools for making pictures"
+                class="smaller-img"
+                width="150"
+                height="142"
+              />
+            </div>
+
+            <div class="desktop-img-bigger-bg">
+              <img
+                srcset="
+                  ./images/sign-up/bigger.png   1x,
+                  ./images/sign-up/bigger@2.png 2x
+                "
+                src="./images/sign-up/bigger.png"
+                alt="Our photo device for making pictures"
+                class="bigger-img"
+                width="240"
+                height="296"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </main>

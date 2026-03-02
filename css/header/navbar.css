@@ -52,7 +52,7 @@
   fill: #fff;
 }
 
-.sign-up {
+.sign-up-btn {
   display: none;
 
   border: none;
@@ -86,7 +86,7 @@
     flex-grow: 1;
   }
 
-  .sign-up {
+  .sign-up-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,8 +95,8 @@
       color 300ms linear;
   }
 
-  .sign-up:hover,
-  .sign-up:focus {
+  .sign-up-btn:hover,
+  .sign-up-btn:focus {
     background-color: var(--black-second);
     color: #bea69e;
   }
@@ -145,7 +145,7 @@
     display: none;
   }
 
-  .sign-up {
+  .sign-up-btn {
     width: 239px;
   }
 }
