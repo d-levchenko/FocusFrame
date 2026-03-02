@@ -63,7 +63,8 @@
 }
 
 .svg-review-icon {
-  fill: #bea69e;
+  fill: var(--brown);
+  stroke: var(--black-second);
 }
 
 .reviews {
@@ -126,17 +127,16 @@
 
   .students-link {
     color: var(--white);
-    transition: color 300ms linear;
+    stroke: var(--white);
+    transition:
+      color 300ms linear,
+      stroke 300ms linear;
   }
 
   .students-link:hover,
   .students-link:focus {
     color: var(--brown);
-  }
-
-  .svg-student-arrow:hover,
-  .svg-student-arrow:focus {
-    fill: var(--brown);
+    stroke: var(--brown);
   }
 }
 

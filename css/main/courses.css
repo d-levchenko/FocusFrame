@@ -77,8 +77,8 @@
 }
 
 .courses-arrow {
-  color: #777777;
-  transition: color 300ms linear;
+  stroke: #777777;
+  transition: stroke 300ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -115,7 +115,7 @@
 
   .courses-arrow:hover,
   .courses-arrow:focus {
-    color: var(--black);
+    stroke: var(--black);
   }
 }
 
