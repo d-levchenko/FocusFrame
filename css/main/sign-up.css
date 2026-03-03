@@ -27,7 +27,7 @@
   line-height: 1.29;
   color: var(--white);
   background-color: inherit;
-  transition: color 300ms linear;
+  transition: border-color 300ms linear;
 }
 
 .sign-up-comment {
@@ -38,6 +38,8 @@
   width: 100%;
   height: 112px;
   background-color: inherit;
+  resize: none;
+  transition: border-color 300ms linear;
 }
 
 .sign-up-send-btn {
@@ -51,6 +53,7 @@
   line-height: 1.25;
   text-transform: uppercase;
   color: var(--black);
+  border: none;
 
   transition:
     color 300ms linear,
@@ -92,9 +95,19 @@
     font-size: 16px;
   }
 
+  .sign-up-input:focus {
+    border-color: var(--brown);
+    outline: none;
+  }
+
   .sign-up-send-btn {
     font-size: 18px;
     height: 60px;
+  }
+
+  .sign-up-comment:focus {
+    border-color: var(--brown);
+    outline: none;
   }
 
   .sign-up-send-btn:hover,

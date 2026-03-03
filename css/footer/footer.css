@@ -127,6 +127,19 @@
 
   .footer-email {
     width: 178px;
-    height: 60px;
+  }
+
+  .left-desc {
+    max-width: 171px;
+  }
+
+  .right-desc {
+    max-width: 131px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .form-wrapper {
+    gap: 16px;
   }
 }
