@@ -11,16 +11,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
       integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <!-- favicon icon -->
     <link rel="icon" href="./images/favicon/camera.ico" type="image/x-icon" />
@@ -73,6 +71,41 @@
 
         <button class="sign-up-btn" type="button">Sign up</button>
       </div>
+
+      <div class="burger-menu">
+        <button class="mobile-close-btn" type="button">
+          <svg class="mobile-close-icon" width="32" height="32">
+            <use href="./images/icons/icons.svg#mobile-close"></use>
+          </svg>
+        </button>
+
+        <ul class="burger-list">
+          <li class="burger-list-item">
+            <a href="#about-us" class="burger-link">About us</a>
+          </li>
+          <li class="burger-list-item">
+            <a href="#courses" class="burger-link">Our courses</a>
+          </li>
+          <li class="burger-list-item">
+            <a href="#mentors" class="burger-link">Our mentors</a>
+          </li>
+          <li class="burger-list-item">
+            <a href="#reviews" class="burger-link">Reviews</a>
+          </li>
+          <li class="burger-list-item">
+            <a href="#address" class="burger-link">contacts</a>
+          </li>
+        </ul>
+
+        <img
+          class="mobile-menu-img"
+          srcset="
+            ./images/mobile-menu/mobile-menu.jpg   1x,
+            ./images/mobile-menu/mobile-menu@2.jpg 2x
+          "
+          src="./images/mobile-menu/mobile-menu.jpg"
+          alt="Mobile menu picture" />
+      </div>
     </header>
 
     <main class="main">
@@ -101,8 +134,7 @@
                         "
                         src="./images/students/girl-first.jpg"
                         alt="Our students"
-                        class="students-img students-img-first"
-                      />
+                        class="students-img students-img-first" />
                     </li>
                     <li class="students-list-item">
                       <img
@@ -112,8 +144,7 @@
                         "
                         src="./images/students/boy-first.jpg"
                         alt="Our students"
-                        class="students-img students-img-second"
-                      />
+                        class="students-img students-img-second" />
                     </li>
                     <li class="students-list-item">
                       <img
@@ -123,8 +154,7 @@
                         "
                         src="./images/students/girl-second.jpg"
                         alt="Our students"
-                        class="students-img students-img-third"
-                      />
+                        class="students-img students-img-third" />
                     </li>
                   </ul>
 
@@ -158,8 +188,7 @@
                 ./images/hero/hero-img@2.png 2x
               "
               src="./images/hero/hero-img.png"
-              alt="Hero image"
-            />
+              alt="Hero image" />
           </div>
         </div>
       </section>
@@ -189,8 +218,7 @@
               "
               sizes="(width <= 768px) 600px, 768px"
               src="./images/about-us/about-us.jpg"
-              alt="About us"
-            />
+              alt="About us" />
 
             <ul class="about-us-list">
               <li class="about-us-list-item">
@@ -310,8 +338,7 @@
                   "
                   src="./images/mentors/emilia.jpg"
                   alt="Emilia Smith - Mentor"
-                  class="mentors-img"
-                />
+                  class="mentors-img" />
                 <h3 class="mentors-list-item-title">Emilia Smith</h3>
                 <p class="mentors-list-description">1.5 years of experience</p>
               </div>
@@ -325,8 +352,7 @@
                   "
                   src="./images/mentors/alex.jpg"
                   alt="Alex Lebedev - Mentor"
-                  class="mentors-img"
-                />
+                  class="mentors-img" />
                 <h3 class="mentors-list-item-title">Alex Lebedev</h3>
                 <p class="mentors-list-description">3.5 years of experience</p>
               </div>
@@ -340,8 +366,7 @@
                   "
                   src="./images/mentors/mia.jpg"
                   alt="Mia Dubrovska - Mentor"
-                  class="mentors-img"
-                />
+                  class="mentors-img" />
                 <h3 class="mentors-list-item-title">Mia Dubrovska</h3>
                 <p class="mentors-list-description">2.0 years of experience</p>
               </div>
@@ -355,8 +380,7 @@
                   "
                   src="./images/mentors/eliot.jpg"
                   alt="Eliot Kovalev - Mentor"
-                  class="mentors-img"
-                />
+                  class="mentors-img" />
                 <h3 class="mentors-list-item-title">Eliot Kovalev</h3>
                 <p class="mentors-list-description">4.0 years of experience</p>
               </div>
@@ -382,24 +406,21 @@
                 class="sign-up-input"
                 type="text"
                 id="name"
-                placeholder="Enter your name"
-              />
+                placeholder="Enter your name" />
 
               <label class="sign-up-label" for="email"> </label>
               <input
                 class="sign-up-input"
                 type="email"
                 id="email"
-                placeholder="Enter your email"
-              />
+                placeholder="Enter your email" />
 
               <label class="sign-up-label" for="comment"> </label>
               <textarea
                 class="sign-up-comment"
                 name="comment"
                 id="comment"
-                placeholder="Message"
-              ></textarea>
+                placeholder="Message"></textarea>
 
               <button class="sign-up-send-btn" type="button">Send</button>
 
@@ -422,8 +443,7 @@
                 alt="Our photo tools for making pictures"
                 class="smaller-img"
                 width="150"
-                height="142"
-              />
+                height="142" />
             </div>
 
             <div class="desktop-img-bigger-bg">
@@ -436,8 +456,7 @@
                 alt="Our photo device for making pictures"
                 class="bigger-img"
                 width="240"
-                height="296"
-              />
+                height="296" />
             </div>
           </div>
         </div>
@@ -460,8 +479,7 @@
                     alt="Person review photo"
                     class="review-person-img"
                     width="56"
-                    height="56"
-                  />
+                    height="56" />
 
                   <div class="review-person-info">
                     <h3 class="rewiev-person-name">Abraham Baker</h3>
@@ -473,40 +491,34 @@
                   <li class="svg-review-stars-item">
                     <svg class="svg-stars-review" width="16" height="16">
                       <use
-                        href="./images/icons/icons.svg#stars-review-active"
-                      />
+                        href="./images/icons/icons.svg#stars-review-active" />
                     </svg>
                   </li>
                   <li class="svg-review-stars-item">
                     <svg class="svg-stars-review" width="16" height="16">
                       <use
-                        href="./images/icons/icons.svg#stars-review-active"
-                      />
+                        href="./images/icons/icons.svg#stars-review-active" />
                     </svg>
                   </li>
                   <li class="svg-review-stars-item">
                     <svg class="svg-stars-review" width="16" height="16">
                       <use
-                        href="./images/icons/icons.svg#stars-review-active"
-                      />
+                        href="./images/icons/icons.svg#stars-review-active" />
                     </svg>
                   </li>
                   <li class="svg-review-stars-item">
                     <svg class="svg-stars-review" width="16" height="16">
                       <use
-                        href="./images/icons/icons.svg#stars-review-active"
-                      />
+                        href="./images/icons/icons.svg#stars-review-active" />
                     </svg>
                   </li>
                   <li class="svg-review-stars-item">
                     <svg
                       class="svg-stars-review not-active-star"
                       width="16"
-                      height="16"
-                    >
+                      height="16">
                       <use
-                        href="./images/icons/icons.svg#stars-review-not-active"
-                      />
+                        href="./images/icons/icons.svg#stars-review-not-active" />
                     </svg>
                   </li>
                 </ul>
@@ -533,8 +545,7 @@
                     alt="Person review photo"
                     class="review-person-img"
                     width="56"
-                    height="56"
-                  />
+                    height="56" />
 
                   <div class="review-person-info">
                     <h3 class="rewiev-person-name">Amanda Lowery</h3>
@@ -546,40 +557,34 @@
                   <li class="svg-review-stars-item">
                     <svg class="svg-stars-review" width="16" height="16">
                       <use
-                        href="./images/icons/icons.svg#stars-review-active"
-                      />
+                        href="./images/icons/icons.svg#stars-review-active" />
                     </svg>
                   </li>
                   <li class="svg-review-stars-item">
                     <svg class="svg-stars-review" width="16" height="16">
                       <use
-                        href="./images/icons/icons.svg#stars-review-active"
-                      />
+                        href="./images/icons/icons.svg#stars-review-active" />
                     </svg>
                   </li>
                   <li class="svg-review-stars-item">
                     <svg class="svg-stars-review" width="16" height="16">
                       <use
-                        href="./images/icons/icons.svg#stars-review-active"
-                      />
+                        href="./images/icons/icons.svg#stars-review-active" />
                     </svg>
                   </li>
                   <li class="svg-review-stars-item">
                     <svg class="svg-stars-review" width="16" height="16">
                       <use
-                        href="./images/icons/icons.svg#stars-review-active"
-                      />
+                        href="./images/icons/icons.svg#stars-review-active" />
                     </svg>
                   </li>
                   <li class="svg-review-stars-item">
                     <svg
                       class="svg-stars-review not-active-star"
                       width="16"
-                      height="16"
-                    >
+                      height="16">
                       <use
-                        href="./images/icons/icons.svg#stars-review-not-active"
-                      />
+                        href="./images/icons/icons.svg#stars-review-not-active" />
                     </svg>
                   </li>
                 </ul>
@@ -669,8 +674,7 @@
               <input
                 class="footer-email"
                 type="email"
-                placeholder="Enter your email"
-              />
+                placeholder="Enter your email" />
 
               <button class="footer-button" type="button">Go</button>
             </div>

@@ -8,8 +8,4 @@
 @import './main/sign-up.css';
 @import './main/reviews.css';
 @import './footer/footer.css';
-
-/* temporary style */
-.hidden {
-  display: none;
-}
+@import './header/mobile-menu.css';
